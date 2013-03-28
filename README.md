@@ -1,4 +1,4 @@
-# av-length — command line app to get the length of an A/V file
+# av-length — command line tool to get the length of an A/V file
 
 ## Usage
 
@@ -7,19 +7,22 @@
 ## Examples
 
 >print the length of the audio file `myfile.caf`
+
 `./av-length myfile.caf`
 
 >print the length of the video file `myfile.m4v`
+
 `./av-length myfile.m4v`
 
 >print the file MIME types supported by `av-length`
+
 `./av-length -types`
 
 ## Behaviour
 
 `av-length` will print to stdout the duration in **seconds** of the audio-visual file at the path specified by `<AV file path>`. 
 
-If the file is not a valid AV file, then `0` will be printed.
+If the file is not a valid AV file, then `0.000000` will be printed.
 
 If the argument `-types` is given, a list of supported file MIME types will be printed.
 
